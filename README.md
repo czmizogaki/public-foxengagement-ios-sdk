@@ -48,6 +48,22 @@
 * `API_KEY` 値は案件開始時に弊社より発行させて頂くIDとなります。
 広告表示に必須となります。
 
+|キー|バリュー|
+|---:|:---|
+|API_KEY|値は案件開始時に弊社より発行させて頂くIDとなります。広告表示に必須となります。|
+
+### 1.5 App Transport Security (ATS)設定
+ATSを有効した場合、**NSExceptionDomains**に下記の設定を追加してください。
+```xml
+<key>forceoperationx.com</key>
+<dict>
+	<key>NSExceptionAllowsInsecureHTTPLoads</key>
+	<true/>
+	<key>NSIncludesSubdomains</key>
+	<true/>
+</dict>
+```
+
 <div id="about_api"></div>
 ## 2. API
 
@@ -75,12 +91,12 @@
 ### FEGAdStateDelegate
 |返り値型|メソッド|詳細|
 |---:|:---|:---|
-|void|onSuccess ( UIView v )<br><br>`v` : 広告のView|広告の表示が正常だった場合に呼ばれます。|
-|void|onFailed ( UIView v ) <br><br> `v` : 広告のView|広告が表示できなかった場合に呼ばれます。|
-|void|onClicked ( UIView v ) <br><br> `v` : 広告のView|広告がクリックされた場合に呼ばれます。|
-|BOOL|onFallback ()|表示する広告がなかった場合に呼ばれます。Fallbackの場合、メディア側で用意したクリエイティブを表示することが可能となっています。その場合は返り値にtrueを指定してください。また、任意の処理を行うため広告枠を非表示にする場合にはfalseを返してください。|
+|void|onAdSuccess ( UIView v )<br><br>`v` : 広告のView|広告の表示が正常だった場合に呼ばれます。|
+|void|onAdFailed ( UIView v ) <br><br> `v` : 広告のView|広告が表示できなかった場合に呼ばれます。|
+|void|onAdClicked ( UIView v ) <br><br> `v` : 広告のView|広告がクリックされた場合に呼ばれます。|
+|BOOL|onAdFallback ( UIView v ) <br><br> `v` : 広告のView|表示する広告がなかった場合に呼ばれます。Fallbackの場合、メディア側で用意したクリエイティブを表示することが可能となっています。<br>その場合は返り値にYESを指定してください。また、任意の処理を行うため広告枠を非表示にする場合にはNOを返してください。|
 
-> ・onFallbackが発生しtrueを返した場合、メディア側で用意したクリエイティブが表示される際のonSuccessとonFailedは呼ばれません。
+> ・onAdFallbackが発生しYESを返した場合、メディア側で用意したクリエイティブが表示される際のonAdSuccessとonAdFailedは呼ばれません。
 
 <div id="code_sample"></div>
 ## 3. コードへの組み込み
@@ -121,8 +137,8 @@ adView.adStateDelegate = adStateDelegate;
 -(void) onAdClicked:(UIView*) view {
     NSLog(@"onAdClicked delegate implement");
 }
--(BOOL) onAdFallback {
+-(BOOL) onAdFallback:(UIView*) view {
     NSLog(@"onAdFallback delegate implement");
-    return false;
+    return NO;
 }
 ```
