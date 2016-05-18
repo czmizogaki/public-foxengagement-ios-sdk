@@ -27,7 +27,7 @@
 
 Podfileファイルに下記の設定を追加してください。
 ```ruby
-foxEngagementVersion = "master"
+foxEngagementVersion = "1.0.0"
 pod "foxEngagement", :podspec =>"https://github.com/cyber-z/public-foxEngagement-ios-sdk/raw/#{foxEngagementVersion}/cocoapods/foxEngagement.podspec"
 ```
 
