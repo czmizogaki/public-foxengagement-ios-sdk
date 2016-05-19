@@ -32,7 +32,7 @@
 Podfileファイルに下記の設定を追加してください。
 ```ruby
 foxEngagementVersion = "1.0.0"
-pod "foxEngagement", :podspec =>"https://github.com/cyber-z/public-foxEngagement-ios-sdk/raw/#{foxEngagementVersion}/cocoapods/foxEngagement.podspec"
+pod 'foxEngagement' , :podspec =>"https://github.com/cyber-z/public-foxEngagement-ios-sdk/raw/#{foxEngagementVersion}/cocoapods/foxEngagement.podspec"
 ```
 
 * **マニュアル導入する場合**
@@ -55,6 +55,10 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 
 * `FoxEngagement.plist`
 
+plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/resouce/FoxEngagement.plist)よりダウンロードしてください。
+ダウンロードしたplistをアプリケーションのプロジェクトに組み込んでください。
+
+
 **設定項目**
 
 * `API_KEY` 値は案件開始時に弊社より発行させて頂くIDとなります。
@@ -74,6 +78,8 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 		<true/>
 	</dict>
 ```
+
+
 
 <div id="about_api"></div>
 ## 2. API
