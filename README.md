@@ -84,18 +84,18 @@ ATSを有効した場合、NSExceptionDomainsに下記の設定を追加して�
 
 ```xml
 <key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSExceptionDomains</key>
 	<dict>
-		<key>NSExceptionDomains</key>
+		<key>forceoperationx.com</key>
 		<dict>
-			<key>forceoperationx.com</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
 		</dict>
 	</dict>
+</dict>
 ```
 ![Alt Text](Resouce/cyber-z-02.png)
 
