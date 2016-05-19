@@ -61,7 +61,7 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 
 * `FoxEngagement.plist`
 
-plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/FoxEngagement.plist)よりダウンロードしてください。
+plistを[こちら](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/FoxEngagement.plist)よりダウンロードしてください。
 ダウンロードしたplistをアプリケーションのプロジェクトに組み込んでください。
 
 
@@ -74,7 +74,7 @@ plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob
 |---:|:---|
 |API_KEY|値は案件開始時に弊社より発行させて頂くIDとなります。広告表示に必須となります。|
 
-![Alt Text](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-01.png) 
+![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-01.png) 
 
 ### 1.5 App Transport Security (ATS)設定
 ```xml
@@ -84,7 +84,7 @@ plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob
 		<true/>
 	</dict>
 ```
-![Alt Text](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-02.png)
+![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-02.png)
 
 
 <div id="about_api"></div>
@@ -127,7 +127,8 @@ plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob
 Objective-Cで実装する際は下記をサンプル１とサンプル２を参考にしてください。
 Swiftで実装する際はF.O.X-Engagement-Briding-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Briding-Header.h)よりダウンロードしてください。
 ダウンロードしたF.O.X-Engagement-Briding-Headerをアプリケーションのプロジェクトに組み込んでください。
-また
+また下記のようにプロジェクトファイルを編集してください。
+![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-03.png)
 
 ### 3.1 広告表示サンプル １ (Objective-C)
 
