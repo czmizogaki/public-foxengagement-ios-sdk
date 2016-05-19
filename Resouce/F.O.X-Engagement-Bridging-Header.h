@@ -1,5 +1,5 @@
 //
-//  F.O.X-Engagement-Briding-Header.h
+//  F.O.X-Engagement-Bridging-Header.h
 //  Example--F.O.X-Engagement-Swift
 //
 //  Created by MMizogaki on 2016/05/19.
