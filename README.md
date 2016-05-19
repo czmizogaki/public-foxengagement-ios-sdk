@@ -54,6 +54,7 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 **ファイル名**
 
 * `FoxEngagement.plist`
+plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/releases)よりダウンロードしてください。
 
 **設定項目**
 
@@ -63,6 +64,8 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 |キー|バリュー|
 |---:|:---|
 |API_KEY|値は案件開始時に弊社より発行させて頂くIDとなります。広告表示に必須となります。|
+
+
 
 ### 1.5 App Transport Security (ATS)設定
 ATSを有効した場合、**NSExceptionDomains**に下記の設定を追加してください。
