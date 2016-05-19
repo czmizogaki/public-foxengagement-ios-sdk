@@ -10,7 +10,7 @@
 )](https://developer.apple.com/jp/documentation/)
 [![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
-[![release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/czmizogaki/public-foxengagement-ios-sdk/Perfect/release)
+[![release](https://img.shields.io/github/release/qubyte/rubidium.svg)](Perfect/release)
 
 
 ## F.O.Xエンゲージメント配信とは
@@ -46,7 +46,7 @@ pod 'foxEngagement' , :podspec =>"https://github.com/cyber-z/public-foxEngagemen
 
 * **マニュアル導入する場合**
 
-SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/releases)よりダウンロードしてください。
+SDK本体を[こちら](releases)よりダウンロードしてください。
 ダウンロードしたSDKを展開し、ライブラリファイルをアプリケーションのプロジェクトに組み込んでください。
 
 ### 1.2 ライブラリ内訳
@@ -64,7 +64,7 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 
 * `FoxEngagement.plist`
 
-plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/FoxEngagement.plist)よりダウンロードしてください。
+plistを[こちら](Resouce/FoxEngagement.plist)よりダウンロードしてください。
 ダウンロードしたplistをアプリケーションのプロジェクトに組み込んでください。
 
 
@@ -77,10 +77,10 @@ plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob
 |---:|:---|
 |API_KEY|値は案件開始時に弊社より発行させて頂くIDとなります。広告表示に必須となります。|
 
-![Alt Text](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-01.png) 
+![Alt Text](Resouce/cyber-z-01.png) 
 
 ### 1.5 App Transport Security (ATS)設定
-HTTP通信を許容できるように下記のようにinfo.plistを編集してください。
+
 ```xml
 <key>NSAppTransportSecurity</key>
 	<dict>
@@ -88,7 +88,7 @@ HTTP通信を許容できるように下記のようにinfo.plistを編集して
 		<true/>
 	</dict>
 ```
-![Alt Text](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-02.png)
+![Alt Text](Resouce/cyber-z-02.png)
 
 
 <div id="about_api"></div>
@@ -132,7 +132,7 @@ Objective-Cで実装する際は下記を広告表示サンプル1と広告表�
 Swiftで実装する際はF.O.X-Engagement-Briding-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Briding-Header.h)よりダウンロードしてください。
 ダウンロードしたF.O.X-Engagement-Briding-Headerをアプリケーションのプロジェクトに組み込んでください。
 また下記のようにプロジェクトファイルを編集し、広告表示サンプル3と広告表示サンプル4を参考にしてください。
-![Alt Text](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-03.png)
+![Alt Text](Resouce/cyber-z-03.png)
 
 ### 3.1 広告表示サンプル １ (Objective-C)
 
