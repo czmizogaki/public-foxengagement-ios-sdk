@@ -46,7 +46,7 @@ pod 'foxEngagement' , :podspec =>"https://github.com/cyber-z/public-foxEngagemen
 
 * **マニュアル導入する場合**
 
-SDK本体を[こちら](releases)よりダウンロードしてください。
+SDK本体を[こちら](../../releases)よりダウンロードしてください。
 ダウンロードしたSDKを展開し、ライブラリファイルをアプリケーションのプロジェクトに組み込んでください。
 
 ### 1.2 ライブラリ内訳
