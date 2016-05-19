@@ -84,8 +84,16 @@ plistを[こちら](Resouce/FoxEngagement.plist)よりダウンロードして�
 ```xml
 <key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>forceoperationx.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
 	</dict>
 ```
 ![Alt Text](Resouce/cyber-z-02.png)
