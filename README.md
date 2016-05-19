@@ -55,8 +55,6 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 
 * `FoxEngagement.plist`
 
-* plistのダウンロードは[こちら](https://github.com/czmizogaki/public-foxengagement-ios-sdk/FoxEngagement.plist)
-
 **設定項目**
 
 * `API_KEY` 値は案件開始時に弊社より発行させて頂くIDとなります。
@@ -69,15 +67,12 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 
 
 ### 1.5 App Transport Security (ATS)設定
-ATSを有効した場合、**NSExceptionDomains**に下記の設定を追加してください。
 ```xml
-<key>forceoperationx.com</key>
-<dict>
-	<key>NSExceptionAllowsInsecureHTTPLoads</key>
-	<true/>
-	<key>NSIncludesSubdomains</key>
-	<true/>
-</dict>
+<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 ```
 
 <div id="about_api"></div>
@@ -117,9 +112,13 @@ ATSを有効した場合、**NSExceptionDomains**に下記の設定を追加し�
 <div id="code_sample"></div>
 ## 3. コードへの組み込み
 
-### 3.1 広告表示サンプル その１
+### 3.1 広告表示サンプル １ (Objective-C)
 
 ```objc
+
+#import "FEGAdStateDelegate.h"
+#import "FEGAdView.h"
+
 NSString* placementId = xxx; // 管理者より発行される
 CGRect frame = CGRectMake(x, y, 0, 0);;// 場所だけ指定する
 FEGAdView* adView = [[FEGAdView alloc] initWithFrame:frame];
@@ -127,11 +126,18 @@ adView.placementId = placementId;
 adView.size = FEG_ADVIEW_SIZE_320x50;
 [parentView addSubview:adView];
 [adView show];
+
 ```
 
-### 3.2 広告表示サンプル その2
+### 3.2 広告表示サンプル 2 (Objective-C)
 
 ```objc
+#import "FEGAdStateDelegate.h"
+#import "FEGAdView.h"
+
+@interface UIViewController ()<FEGAdBannerStateDelegate>
+@end
+
 NSString* placementId = xxx; // 管理者より発行される
 CGRect frame = CGRectMake(x, y, 0, 0);;// 場所だけ指定する
 FEGAdView* adView = [[FEGAdView alloc] initWithFrame:frame];
@@ -146,7 +152,6 @@ adView.adStateDelegate = adStateDelegate;
 -(void) onAdSuccess:(UIView *) view {
     NSLog(@"onAdSuccess delegate implement");
 }
-
 -(void) onAdFailed:(UIView *) view {
     NSLog(@"onAdFailed delegate implement");
 }
@@ -156,5 +161,52 @@ adView.adStateDelegate = adStateDelegate;
 -(BOOL) onAdFallback:(UIView*) view {
     NSLog(@"onAdFallback delegate implement");
     return NO;
+}
+```
+
+### 3.3 広告表示サンプル 3 (Swift)
+
+```swift
+let placementId: String = "XXX" // 管理者より発行される
+let frame: CGRect = CGRectMake(x, y, 0, 0) // 場所だけ指定する
+let adView: FEGAdView = FEGAdView(frame: frame)
+adView.placementId = placementId
+adView.size = FEG_ADVIEW_SIZE._320x50
+parentView.addSubview(adView)
+adView.show()
+```
+
+### 3.4 広告表示サンプル 4 (Swift)
+
+```swift
+class ViewController: UIViewController,FEGAdBannerStateDelegate {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let placementId: String = "XXX" // 管理者より発行される
+        let frame: CGRect = CGRectMake(x, y, 0, 0) // 場所だけ指定する
+        let adView: FEGAdView = FEGAdView(frame: frame)
+        adView.placementId = placementId
+        adView.size = FEG_ADVIEW_SIZE._320x50
+        adView.adStateDelegate = self
+        parentView.addSubview(adView)
+        adView.show()
+    }
+    
+    // FEGAdStateDelegate 実装
+    func onAdSuccess(view: UIView!) {
+        print("onAdSuccess delegate implement")
+    }
+    func onAdFailed(view: UIView!) {
+        print("onAdFailed delegate implement")
+    }
+    func onAdClicked(view: UIView!) {
+        print("onAdClicked delegate implement")
+    }
+    func onAdFallback(view: UIView!) -> Bool {
+        print("onAdFallback delegate implement")
+        return false
+    }
 }
 ```
