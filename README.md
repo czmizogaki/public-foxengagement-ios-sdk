@@ -128,10 +128,10 @@ HTTP通信を許容できるように下記のようにinfo.plistを編集して
 <div id="code_sample"></div>
 ## 3. コードへの組み込み
 
-Objective-Cで実装する際は下記をサンプル1とサンプル2を参考にしてください。
+Objective-Cで実装する際は下記を広告表示サンプル1と広告表示サンプル2を参考にしてください。
 Swiftで実装する際はF.O.X-Engagement-Briding-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Briding-Header.h)よりダウンロードしてください。
 ダウンロードしたF.O.X-Engagement-Briding-Headerをアプリケーションのプロジェクトに組み込んでください。
-また下記のようにプロジェクトファイルを編集しサンプル3とサンプル4を参考にしてください。
+また下記のようにプロジェクトファイルを編集し、広告表示サンプル3と広告表示サンプル4を参考にしてください。
 ![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-03.png)
 
 ### 3.1 広告表示サンプル １ (Objective-C)
