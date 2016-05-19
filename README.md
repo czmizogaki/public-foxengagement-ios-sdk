@@ -80,6 +80,7 @@ plistを[こちら](Resouce/FoxEngagement.plist)よりダウンロードして�
 ![Alt Text](Resouce/cyber-z-01.png) 
 
 ### 1.5 App Transport Security (ATS)設定
+ATSを有効した場合、NSExceptionDomainsに下記の設定を追加してください。
 
 ```xml
 <key>NSAppTransportSecurity</key>
