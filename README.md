@@ -54,7 +54,8 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 **ファイル名**
 
 * `FoxEngagement.plist`
-plistを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/releases)よりダウンロードしてください。
+
+plistのダウンロードは[こちら](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/FoxEngagement.plist)
 
 **設定項目**
 
