@@ -8,6 +8,9 @@
 )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-Objective–C-brightgreen.svg?style=flat
 )](https://developer.apple.com/jp/documentation/)
+[![Swift 2.2](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Issues](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/czmizogaki/public-foxengagement-ios-sdk/Perfect/issues)
 
 
 ## F.O.Xエンゲージメント配信とは
@@ -77,6 +80,7 @@ plistを[こちら](https://github.com/czmizogaki/public-foxengagement-ios-sdk/b
 ![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-01.png) 
 
 ### 1.5 App Transport Security (ATS)設定
+HTTP通信を許容できるように下記のようにinfo.plistを編集してください。
 ```xml
 <key>NSAppTransportSecurity</key>
 	<dict>
@@ -124,10 +128,10 @@ plistを[こちら](https://github.com/czmizogaki/public-foxengagement-ios-sdk/b
 <div id="code_sample"></div>
 ## 3. コードへの組み込み
 
-Objective-Cで実装する際は下記をサンプル１とサンプル２を参考にしてください。
+Objective-Cで実装する際は下記をサンプル1とサンプル2を参考にしてください。
 Swiftで実装する際はF.O.X-Engagement-Briding-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Briding-Header.h)よりダウンロードしてください。
 ダウンロードしたF.O.X-Engagement-Briding-Headerをアプリケーションのプロジェクトに組み込んでください。
-また下記のようにプロジェクトファイルを編集してください。
+また下記のようにプロジェクトファイルを編集しサンプル3とサンプル4を参考にしてください。
 ![Alt Text](https://github.com/czmizogaki/public-foxengagement-ios-sdk/blob/master/Resouce/cyber-z-03.png)
 
 ### 3.1 広告表示サンプル １ (Objective-C)
