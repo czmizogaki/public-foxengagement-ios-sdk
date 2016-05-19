@@ -138,7 +138,7 @@ ATSを有効した場合、NSExceptionDomainsに下記の設定を追加して�
 ## 3. コードへの組み込み
 
 Objective-Cで実装する際は下記を広告表示サンプル1と広告表示サンプル2を参考にしてください。
-Swiftで実装する際はF.O.X-Engagement-Briding-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Briding-Header.h)よりダウンロードしてください。
+Swiftで実装する際はF.O.X-Engagement-Bridging-Headerを[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/blob/master/Resouce/F.O.X-Engagement-Bridging-Header.h)よりダウンロードしてください。
 ダウンロードしたF.O.X-Engagement-Bridging-Headerをアプリケーションのプロジェクトに組み込んでください。
 また下記のようにプロジェクトファイルを編集し、広告表示サンプル3と広告表示サンプル4を参考にしてください。
 ![Alt Text](Resouce/cyber-z-03.png)
