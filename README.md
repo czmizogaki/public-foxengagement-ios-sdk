@@ -1,3 +1,7 @@
+
+![FoxLogo](https://cyber-z.co.jp/cp-upfiles/2015/10/FOX_logo_1017_cs1.png) 
+
+
 # - F.O.X Engagement iOS Integration Guide -
 
 ## F.O.Xエンゲージメント配信とは
@@ -44,8 +48,6 @@ SDK本体を[こちら](https://github.com/cyber-z/public-foxengagement-ios-sdk/
 ### 1.3 必要なframework
 * UIKit.framework
 * Foundation.framework
-* Security.framework
-* ImageIO.framework
 * AdSupport.framework
 
 ### 1.4 plist設定ファイル
