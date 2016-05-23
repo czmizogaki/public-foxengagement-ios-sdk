@@ -6,10 +6,10 @@
 //  Copyright © 2016年 MMizogaki. All rights reserved.
 //
 
-#ifndef F_O_X_Engagement_Briding_Header_h
-#define F_O_X_Engagement_Briding_Header_h
+#ifndef F_O_X_Engagement_Bridging_Header_h
+#define F_O_X_Engagement_Bridging_Header_h
 
 #import "FEGAdStateDelegate.h"
 #import "FEGAdView.h"
 
-#endif /* F_O_X_Engagement_Briding_Header_h */
+#endif /* F_O_X_Engagement_Bridging_Header_h */
